@@ -41,7 +41,7 @@ jobs:
           git config user.email ${{secrets.GH_EMAIL}}
           git config user.name ${{secrets.GH_NAME}}
           pwd
-          cd demo-ui
+          cd devops-ui
           cat deployment.yaml
           pwd
           sed -i "s+emanoeliiso/devops-ui.*+emanoeliiso/devops-ui:${{github.sha}}+g" deployment.yaml
